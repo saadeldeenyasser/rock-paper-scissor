@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+
+
+.bg-grad {
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.op-shadow {
+    /*     box-shadow: rgba(0, 0, 0, 0.203) 0 8px ; */
+    box-shadow: inset 0 -8px rgba(0, 0, 0, 0.411);
+}
+
+.in-shdw {
+    box-shadow: inset 0 10px 10px rgba(0, 0, 0, 0.503);
+}
+
+.bg-img {
+    background-image: url('../icons/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-size: 70% 60%;
+    background-position: 50% 24px;
+
+}
+
+.bg-poly {
+    background-image: url('../icons/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: 50% 24px;
+    aspect-ratio: 1/1;
+}
+
+/* .blue{
+    color:rgb(30, 30, 57)
+} */
+.trio-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.poly-grid {
+    display: grid;
+    grid-template-columns:
+        /* 3fr 1fr 3fr 1fr 3fr */
+        2fr 1fr 2fr;
+    grid-template-rows: 2fr 2fr 1fr;
+
+}
+
+.Mheight {
+    max-height: calc(100%-170px)
+}
